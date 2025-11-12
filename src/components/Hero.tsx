@@ -52,9 +52,6 @@ const Hero = () => {
                 {typedText}
               </span>
             </div>
-            <p className="text-lg text-muted-foreground mb-8 max-w-xl">
-              Passionate about building scalable web applications using MERN stack. Based in Pune, India.
-            </p>
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <Button
                 size="lg"
