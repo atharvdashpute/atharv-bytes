@@ -14,18 +14,40 @@ const Contact = () => {
 
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: "",
+    Name: "",
     email: "",
-    message: "",
+    Message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon!",
-    });
-    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(true);
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzK7Pr8Nbj9cx7y5fcIL_5PBuCpfOB_nDURN8Ygmv8bozUA0NU642C-9cV1pT9swdEvYw/exec';
+    
+    try {
+      const formDataToSend = new FormData();
+      formDataToSend.append('Name', formData.Name);
+      formDataToSend.append('email', formData.email);
+      formDataToSend.append('Message', formData.Message);
+
+      await fetch(scriptURL, { method: 'POST', body: formDataToSend });
+      
+      toast({
+        title: "Message Sent!",
+        description: "Thank you for reaching out. I'll get back to you soon!",
+      });
+      setFormData({ Name: "", email: "", Message: "" });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -90,12 +112,12 @@ const Contact = () => {
             </div>
           </div>
           <div className="bg-card rounded-lg p-6 shadow-medium border border-border">
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} name="submit-to-google-sheet" className="space-y-4">
               <div>
                 <Input
                   placeholder="Your Name"
-                  name="name"
-                  value={formData.name}
+                  name="Name"
+                  value={formData.Name}
                   onChange={handleChange}
                   required
                   className="border-2 focus:border-accent"
@@ -115,8 +137,8 @@ const Contact = () => {
               <div>
                 <Textarea
                   placeholder="Your Message"
-                  name="message"
-                  value={formData.message}
+                  name="Message"
+                  value={formData.Message}
                   onChange={handleChange}
                   required
                   rows={6}
@@ -125,10 +147,11 @@ const Contact = () => {
               </div>
               <Button
                 type="submit"
+                disabled={isSubmitting}
                 className="w-full bg-gradient-primary hover:opacity-90 transition-all"
                 size="lg"
               >
-                Send Message
+                {isSubmitting ? "Sending..." : "Send Message"}
               </Button>
             </form>
           </div>

@@ -3,6 +3,11 @@ import { Award } from "lucide-react";
 
 const certificationsData = [
   {
+    title: "Fullstack-Web Development MERN",
+    issuer: "Udemy (By Hitesh sir)",
+    year: "2025",
+  },
+  {
     title: "React & Node.js Developer Bootcamp",
     issuer: "Udemy",
     year: "2025",
