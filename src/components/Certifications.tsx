@@ -13,9 +13,34 @@ const certificationsData = [
     year: "2024",
   },
   {
+    title: "Java Development Internship",
+    issuer: "OCTANET",
+    year: "2024 September",
+  },
+  {
+    title: "Artificial Intelligence Machine Learning",
+    issuer: "YBI FOUNDATION",
+    year: "2024 October",
+  },
+  {
+    title: "Web Development",
+    issuer: "Prodigy Infotech",
+    year: "2024 July",
+  },
+  {
+    title: "Data Analytics and Visualization Job Simulation",
+    issuer: "Forage",
+    year: "2024 May",
+  },
+  {
     title: "Google Cloud Fundamentals",
     issuer: "Coursera",
     year: "2024",
+  },
+  {
+    title: "Basic Python Course",
+    issuer: "Udemy",
+    year: "2023",
   },
 ];
 

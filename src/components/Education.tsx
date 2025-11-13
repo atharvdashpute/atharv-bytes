@@ -10,12 +10,12 @@ const educationData = [
     grade: "CGPA: 6.0 / 10 (till 6th sem)",
   },
   {
-    degree: "HSC (Higher Secondary Certificate)",
+    degree: "HSC (12th) - Higher Secondary Certificate",
     institution: "Z. B. Patil College",
     period: "2021 - 2022",
   },
   {
-    degree: "SSC (Secondary School Certificate)",
+    degree: "SSC (10th) - Secondary School Certificate",
     institution: "Jai Hind High School",
     period: "2019 - 2020",
   },
