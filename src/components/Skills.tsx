@@ -33,11 +33,11 @@ const Skills = () => {
               <h3 className="text-xl font-semibold text-accent mb-4">{category}</h3>
               <div className="flex flex-wrap gap-3">
                 {skills.map((skill, skillIndex) => (
-                  <Badge
-                    key={skillIndex}
-                    variant="secondary"
-                    className="text-base py-2 px-4 hover:bg-accent hover:text-accent-foreground transition-all cursor-default"
-                  >
+                 <Badge
+                      key={skillIndex}
+                      variant="secondary"
+                      className="text-base py-2 px-4 bg-accent/20 text-accent hover:bg-accent hover:text-accent-foreground transition-all cursor-default border border-accent/30"
+                    >
                     {skill}
                   </Badge>
                 ))}

@@ -40,10 +40,10 @@ const Certifications = () => {
           {certificationsData.map((cert, index) => (
             <div
               key={index}
-              className="bg-card rounded-lg p-6 shadow-medium border border-border hover:shadow-large transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-card rounded-lg p-6 shadow-medium border border-border hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="flex flex-col items-center text-center">
-                <div className="p-4 bg-accent/10 rounded-full mb-4">
+                <div className="p-4 bg-accent/20 rounded-full mb-4 border border-accent/30">
                   <Award className="w-8 h-8 text-accent" />
                 </div>
                 <h3 className="text-lg font-semibold text-card-foreground mb-2">

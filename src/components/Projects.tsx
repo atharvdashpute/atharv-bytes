@@ -48,16 +48,16 @@ const Projects = () => {
           {projectsData.map((project, index) => (
             <Card
               key={index}
-              className="hover:shadow-large transition-all duration-300 transform hover:-translate-y-2 border-2 hover:border-accent"
+              className="hover:shadow-glow transition-all duration-300 transform hover:-translate-y-2 border-2 hover:border-accent bg-card"
             >
               <CardHeader>
-                <CardTitle className="flex items-center justify-between">
+                <CardTitle className="flex items-center justify-between text-card-foreground">
                   <span>{project.title}</span>
                   <ExternalLink className="w-5 h-5 text-accent" />
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <CardDescription className="text-base mb-4">
+                <CardDescription className="text-base mb-4 text-muted-foreground">
                   {project.description}
                 </CardDescription>
                 <div className="flex flex-wrap gap-2">
@@ -65,7 +65,7 @@ const Projects = () => {
                     <Badge
                       key={techIndex}
                       variant="secondary"
-                      className="bg-accent/10 text-accent hover:bg-accent hover:text-accent-foreground"
+                      className="bg-accent/20 text-accent hover:bg-accent hover:text-accent-foreground border border-accent/30"
                     >
                       {tech}
                     </Badge>

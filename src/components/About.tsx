@@ -17,7 +17,7 @@ const About = () => {
         <h2 className="text-4xl font-bold text-center mb-12 text-foreground">
           About <span className="text-accent">Me</span>
         </h2>
-        <div className="bg-card rounded-lg p-8 shadow-medium border border-border">
+        <div className="bg-card rounded-lg p-8 shadow-medium border border-border hover:shadow-glow transition-all duration-300">
           <p className="text-lg text-card-foreground leading-relaxed">
             I'm a passionate Full Stack Developer skilled in designing, developing, and deploying
             scalable web applications using the MERN stack. I enjoy building responsive interfaces,

@@ -81,7 +81,7 @@ const Contact = () => {
                 {["English", "Marathi", "Hindi"].map((lang) => (
                   <span
                     key={lang}
-                    className="px-4 py-2 bg-accent/10 text-accent rounded-lg font-medium"
+                    className="px-4 py-2 bg-accent/20 text-accent rounded-lg font-medium border border-accent/30"
                   >
                     {lang}
                   </span>

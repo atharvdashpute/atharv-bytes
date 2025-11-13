@@ -40,7 +40,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-subtle px-4 py-20">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-hero px-4 py-20">
       <div className="container max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center md:text-left animate-fade-in">
@@ -55,7 +55,7 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <Button
                 size="lg"
-                className="bg-gradient-primary hover:opacity-90 transition-all shadow-medium"
+                className="bg-gradient-primary hover:opacity-90 transition-all shadow-glow"
                 onClick={scrollToContact}
               >
                 Get In Touch
@@ -64,7 +64,7 @@ const Hero = () => {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-2 hover:bg-accent hover:text-accent-foreground transition-all"
+                className="border-2 hover:bg-accent hover:text-accent-foreground transition-all shadow-soft"
               >
                 <a href="/resume.pdf" download>
                   Download Resume
@@ -76,7 +76,7 @@ const Hero = () => {
                 href="https://github.com/atharvdashpute"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-full bg-secondary hover:bg-accent hover:text-accent-foreground transition-all shadow-soft"
+                className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground transition-all shadow-soft hover:shadow-medium"
               >
                 <Github className="w-6 h-6" />
               </a>
@@ -84,13 +84,13 @@ const Hero = () => {
                 href="https://linkedin.com/in/atharv-dashpute-94bba8257"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 rounded-full bg-secondary hover:bg-accent hover:text-accent-foreground transition-all shadow-soft"
+                className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground transition-all shadow-soft hover:shadow-medium"
               >
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
                 href="mailto:dashputeatharv@gmail.com"
-                className="p-3 rounded-full bg-secondary hover:bg-accent hover:text-accent-foreground transition-all shadow-soft"
+                className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground transition-all shadow-soft hover:shadow-medium"
               >
                 <Mail className="w-6 h-6" />
               </a>
@@ -102,7 +102,7 @@ const Hero = () => {
               <img
                 src={profilePhoto}
                 alt="Atharv Dashpute"
-                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-accent shadow-large"
+                className="relative w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-accent shadow-glow"
               />
             </div>
           </div>

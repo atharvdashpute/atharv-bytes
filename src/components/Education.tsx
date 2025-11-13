@@ -42,10 +42,10 @@ const Education = () => {
           {educationData.map((edu, index) => (
             <div
               key={index}
-              className="bg-card rounded-lg p-6 shadow-medium border border-border hover:shadow-large transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-card rounded-lg p-6 shadow-medium border border-border hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-accent/10 rounded-lg">
+                <div className="p-3 bg-accent/20 rounded-lg border border-accent/30">
                   <GraduationCap className="w-6 h-6 text-accent" />
                 </div>
                 <div className="flex-1">

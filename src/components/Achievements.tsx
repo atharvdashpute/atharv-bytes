@@ -27,10 +27,10 @@ const Achievements = () => {
           {achievementsData.map((achievement, index) => (
             <div
               key={index}
-              className="bg-card rounded-lg p-6 shadow-medium border border-border hover:shadow-large transition-all duration-300 transform hover:-translate-y-1"
+              className="bg-card rounded-lg p-6 shadow-medium border border-border hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1"
             >
               <div className="flex items-start gap-4">
-                <div className="p-3 bg-accent/10 rounded-lg flex-shrink-0">
+                <div className="p-3 bg-accent/20 rounded-lg flex-shrink-0 border border-accent/30">
                   <Trophy className="w-6 h-6 text-accent" />
                 </div>
                 <p className="text-lg text-card-foreground">{achievement}</p>
