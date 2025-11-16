@@ -78,9 +78,36 @@ const Certifications = () => {
                 <div className="p-4 bg-accent/20 rounded-full mb-4 border border-accent/30">
                   <Award className="w-8 h-8 text-accent" />
                 </div>
-                <h3 className="text-lg font-semibold text-card-foreground mb-2">
-                  {cert.title}
-                </h3>
+                <div
+  key={index}
+  className="bg-card rounded-lg p-6 shadow-medium border border-border hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1"
+>
+  <div className="flex flex-col items-center text-center">
+    <div className="p-4 bg-accent/20 rounded-full mb-4 border border-accent/30">
+      <Award className="w-8 h-8 text-accent" />
+    </div>
+
+    {/* Title + External Link */}
+    <div className="flex items-center gap-2 mb-2">
+      <h3 className="text-lg font-semibold text-card-foreground">
+        {cert.title}
+      </h3>
+
+      {cert.link && (
+        <a
+          href={cert.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <ExternalLink className="w-5 h-5 text-accent hover:text-accent/80 transition-colors" />
+        </a>
+      )}
+    </div>
+
+    <p className="text-muted-foreground mb-1">{cert.issuer}</p>
+    <span className="text-sm text-accent font-medium">{cert.year}</span>
+  </div>
+</div>
                 <p className="text-muted-foreground mb-1">{cert.issuer}</p>
                 <span className="text-sm text-accent font-medium">{cert.year}</span>
               </div>
