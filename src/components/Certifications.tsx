@@ -6,32 +6,37 @@ const certificationsData = [
     title: "Fullstack-Web Development MERN",
     issuer: "Udemy (By Hitesh sir)",
     year: "2025",
-     link: "https://atharvdashpute.github.io/Ai-Enhanced-Carrier-Guidelnce-System/",
+     link: "#",
   },
   {
     title: "J.P. Morgan - Software Engineering Job Simulation ",
     issuer: "Forage",
     year: "October 2025",
+    link:"https://drive.google.com/file/d/1V2se23Yy8c7aEAkwjsLlE5Oj0O4EnxGB/view?usp=drive_link",
   },
   {
     title: "Java Development Internship",
     issuer: "OCTANET",
     year: "September 2024 ",
+    link:"https://drive.google.com/file/d/1Tiye0aC0Nm7UvzuUBWgjA2SeGP-oibAy/view?usp=drive_link",
   },
   {
     title: "Artificial Intelligence Machine Learning",
     issuer: "YBI FOUNDATION",
     year: "October 2024 ",
+    link: "https://drive.google.com/file/d/1vLLhGj09Th6pPbIv_X_E4CvdmhVzYxEQ/view?usp=drive_link",
   },
   {
     title: "Web Development",
     issuer: "Prodigy Infotech",
     year: " Jully2024",
+    link : "https://drive.google.com/file/d/1-ZCs2TZ_n0QFeuOv0AgHZ0UB7no4nZ31/view?usp=drive_link",
   },
   {
     title: "Data Analytics and Visualization Job Simulation",
     issuer: "Forage",
     year: " May 2024",
+    link:"https://drive.google.com/file/d/1meX-7tpMpi0deBDu3a9FTqQy6-U7RMR-/view?usp=drive_link",
     
   },
   
@@ -39,12 +44,13 @@ const certificationsData = [
     title: "Basic Python Course",
     issuer: "Udemy",
     year: "2023",
+    link:"https://drive.google.com/file/d/1ZOK_ZUuLNXt9iayXEnKZZb9CELZPoPXj/view?usp=drive_link",
   },
   {
     title: "Carreer Edge - Young Professional",
     issuer: "TCS ION",
     year: "September 2023",
-    link:"https://drive.google.com/drive/folders/1DAEoxCY5vlPrql0AfngXSxCfzVAE0ZVj",
+    link:"https://drive.google.com/file/d/1dvPiqxx9emC2-q16oty6f_CVYc6-WDD_/view?usp=drive_link",
   },
 ];
 
@@ -75,10 +81,10 @@ const Certifications = () => {
                   href={cert.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="mt-4 inline-block px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/80 transition"
+                  className="w-5 h-5 text-accent hover:text-accent/80 transition-colors"
                   >
-                  View Certificate
             </a>
+             
               <div className="flex flex-col items-center text-center">
                 <div className="p-4 bg-accent/20 rounded-full mb-4 border border-accent/30">
                   <Award className="w-8 h-8 text-accent" />
