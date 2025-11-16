@@ -78,13 +78,14 @@ const Certifications = () => {
               key={index}
               className ="bg-card rounded-lg p-6 shadow-medium border border-border hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1"
             >
-              <a 
-                  href={cert.link} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                   < ExternalLink className="w-5 h-5 text-accent hover:text-accent/80 transition-colors" />
-                  >
-            </a>
+              <a
+  href={cert.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-accent hover:text-accent/80 transition"
+>
+  <ExternalLink className="w-4 h-4" />
+</a>
              
               <div className="flex flex-col items-center text-center">
                 <div className="p-4 bg-accent/20 rounded-full mb-4 border border-accent/30">
