@@ -9,45 +9,42 @@ const certificationsData = [
      link: "https://atharvdashpute.github.io/Ai-Enhanced-Carrier-Guidelnce-System/",
   },
   {
-    title: "React & Node.js Developer Bootcamp",
-    issuer: "Udemy",
-    year: "2025",
-     link: "https://atharvdashpute.github.io/Ai-Enhanced-Carrier-Guidelnce-System/",
-  },
-  {
-    title: "Java Programming Masterclass",
-    issuer: "Udemy (by Abdul Bari)",
-    year: "2024",
+    title: "J.P. Morgan - Software Engineering Job Simulation ",
+    issuer: "Forage",
+    year: "October 2025",
   },
   {
     title: "Java Development Internship",
     issuer: "OCTANET",
-    year: "2024 September",
+    year: "September 2024 ",
   },
   {
     title: "Artificial Intelligence Machine Learning",
     issuer: "YBI FOUNDATION",
-    year: "2024 October",
+    year: "October 2024 ",
   },
   {
     title: "Web Development",
     issuer: "Prodigy Infotech",
-    year: "2024 July",
+    year: " Jully2024",
   },
   {
     title: "Data Analytics and Visualization Job Simulation",
     issuer: "Forage",
-    year: "2024 May",
+    year: " May 2024",
+    
   },
-  {
-    title: "Google Cloud Fundamentals",
-    issuer: "Coursera",
-    year: "2024",
-  },
+  
   {
     title: "Basic Python Course",
     issuer: "Udemy",
     year: "2023",
+  },
+  {
+    title: "Carreer Edge - Young Professional",
+    issuer: "TCS ION",
+    year: "September 2023",
+    link:"https://drive.google.com/drive/folders/1DAEoxCY5vlPrql0AfngXSxCfzVAE0ZVj",
   },
 ];
 
@@ -72,8 +69,16 @@ const Certifications = () => {
           {certificationsData.map((cert, index) => (
             <div
               key={index}
-              className="bg-card rounded-lg p-6 shadow-medium border border-border hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1"
+              className ="bg-card rounded-lg p-6 shadow-medium border border-border hover:shadow-glow transition-all duration-300 transform hover:-translate-y-1"
             >
+              <a 
+                  href={cert.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-block px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/80 transition"
+                  >
+                  View Certificate
+            </a>
               <div className="flex flex-col items-center text-center">
                 <div className="p-4 bg-accent/20 rounded-full mb-4 border border-accent/30">
                   <Award className="w-8 h-8 text-accent" />
