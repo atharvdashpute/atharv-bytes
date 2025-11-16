@@ -74,15 +74,15 @@ const Certifications = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certificationsData.map((cert, index) => (
-  <a 
-    key={index}
-    href={cert.link}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="block bg-card rounded-lg p-6 shadow-medium border border-border 
-               hover:shadow-glow transition-all duration-300 transform 
-               hover:-translate-y-1"
-  >
+          <a 
+            key={index}
+            href={cert.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block bg-card rounded-lg p-6 shadow-medium border border-border 
+              hover:shadow-glow transition-all duration-300 transform 
+              hover:-translate-y-1"
+                >
     
              
               <div className="flex flex-col items-center text-center">
@@ -94,6 +94,7 @@ const Certifications = () => {
                 </h3>
                 <p className="text-muted-foreground mb-1">{cert.issuer}</p>
                 <span className="text-sm text-accent font-medium">{cert.year}</span>
+                </a>
               </div>
             </div>
           ))}
