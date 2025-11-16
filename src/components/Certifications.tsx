@@ -6,11 +6,13 @@ const certificationsData = [
     title: "Fullstack-Web Development MERN",
     issuer: "Udemy (By Hitesh sir)",
     year: "2025",
+     link: "https://atharvdashpute.github.io/Ai-Enhanced-Carrier-Guidelnce-System/",
   },
   {
     title: "React & Node.js Developer Bootcamp",
     issuer: "Udemy",
     year: "2025",
+     link: "https://atharvdashpute.github.io/Ai-Enhanced-Carrier-Guidelnce-System/",
   },
   {
     title: "Java Programming Masterclass",
