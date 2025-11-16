@@ -1,5 +1,6 @@
 import { useInView } from "react-intersection-observer";
 import { Award } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 const certificationsData = [
   {
@@ -81,7 +82,7 @@ const Certifications = () => {
                   href={cert.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-5 h-5 text-accent hover:text-accent/80 transition-colors"
+                   < ExternalLink className="w-5 h-5 text-accent hover:text-accent/80 transition-colors" />
                   >
             </a>
              
