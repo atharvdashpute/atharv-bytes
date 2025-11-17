@@ -9,7 +9,7 @@ const projectsData = [
     description:
       "Developed full-stack portal for managing patients, doctors, and appointments. Integrated JWT authentication and RESTful APIs for secure data exchange.",
     tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
-    link: "#",
+    link: "https://health-hub-connect.netlify.app/",
   },
   {
     title: "Mini Blogging Platform",
