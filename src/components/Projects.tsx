@@ -76,7 +76,7 @@ const Projects = () => {
                   <span>{project.title}</span>
                   {project.link !== "#" && (
                     <a href={project.link} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="w-5 h-5 text-accent-foreground hover:text-accent transition-colors" />
+                      <ExternalLink className="w-5 h-5 text-accent hover:text-accent/80 transition-colors" />
                     </a>
                   )}
                 </CardTitle>
